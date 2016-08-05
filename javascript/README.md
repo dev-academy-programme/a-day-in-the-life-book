@@ -105,6 +105,31 @@ var allParagraphTags = $('p')
 
 ### Changing elements
 
+Great, so we can find the parts of the DOM we'd like to work with. Now what?
+
+jQuery provides a wide variety of functions for manipulating elements once we've selected them. One of the most common is to change their CSS classes. For example:
+
+```js
+// Add the CSS class `red` to the element with id `wombat`
+$('#wombat').addClass('red')
+
+// Remove the CSS class
+$('#wombat').removeClass('red')
+
+// If it's on, switch it off. If it's off, switch it on!
+$('#wombat').toggleClass('red')
+```
+
+Notice that each time we change an element, we have to _select_ it first.
+
+We can also manipulate the styles directly:
+
+```js
+// Change the colour of all elements that have class `wombat`
+$('.wombat').css('color', 'blue')
+```
+
+Because many elements might have class `wombat`, this could make quite a bit of the page blue!
 
 
 ### Event handlers

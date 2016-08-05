@@ -1,6 +1,6 @@
 # Summary
 
 * [Overview]
-* [HTML/CSS Stream](html-css/README.md)
-* [JavaScript Stream](javascript/README.md)
+* [HTML/CSS](html-css/README.md)
+* [JavaScript](javascript/README.md)
 * [Engineering Empathy]

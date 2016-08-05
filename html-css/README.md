@@ -2,7 +2,7 @@
 
 The web is built with 3 fundamental languages: HTML, CSS and JavaScript. HTML and CSS provide the structure and styling of what we see and interact with. JavaScript provides the interaction behaviour, but we can focus on that later, after we're more familiar with HTML and CSS.
 
-## Elements (aka Tags)
+## HTML Elements (aka Tags)
 
 HTML is made up of _elements_ and they have a consistent shape.
 
@@ -22,7 +22,7 @@ How 'bout a sweet horizontal rule?<hr>
 ```
 
 
-## Attributes
+## HTML Attributes
 
 Often an element needs more information to do its job. That's where _attributes_ come in.  Each element has a handful of attributes for it.
 
@@ -50,5 +50,8 @@ A web page is constructed with specific elements and attributes.
   </body>
 </html>
 ```
+
+
+## Cascading Style Sheets (CSS)
 
 

@@ -8,13 +8,13 @@ Variables allow us to work with values in a generic way and are used a lot in pr
 
 ```js
 var age = 40
-var name = "Sally Stevens"
+var name = 'Sally Stevens'
 
 // An object
 var customer = {
   age: age,
   name: name,
-  address: "123 Happy Place",
+  address: '123 Happy Place',
   city: 'Auckland',
   country: 'NZ',
   postalCode: 1010
@@ -62,14 +62,49 @@ To add a script to a web page, we use the `<script>` element.
 </html>
 ```
 
+
 ## jQuery
 
 [jQuery](http://jquery.com) is a JavaScript library that makes it much easier to work with the DOM. The most common things we use jQuery for are to select elements, change elements, and set up event handlers.
 
+
+### Before we start
+
+In any program using jQuery, we need to wait until the browser tells us the DOM is ready. We do this using a special function called [`ready`](https://learn.jquery.com/using-jquery-core/document-ready/):
+
+```js
+$(document).ready(function () {
+
+  // All the rest of our code goes here!
+
+})
+```
+
+
 ### Selecting elements
+
+The first part of manipulating DOM elements is to find the one we want to work with. We do this using [_selectors_](https://api.jquery.com/category/selectors/). Selectors work in a very similar way to CSS:
+
+ - to select an element with **id** 'wombat', we use `#wombat` (hash prefix)
+ - to select an element with **class** 'wombat', we use `.wombat` (dot prefix)
+ - to select an element by **tag** name, we use the tag name itself with no prefix (e.g. `p` or `h1`)
+
+In jQuery, this looks like:
+
+```js
+// There should only ever be one element with a given id
+var wombatById = $('#wombat')
+
+// There could be more than one element with a given class
+var allWombatsByClass = $('.wombat')
+
+// There could be lots of 'p' tags in the document
+var allParagraphTags = $('p')
+```
 
 
 ### Changing elements
+
 
 
 ### Event handlers

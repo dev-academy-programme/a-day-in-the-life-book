@@ -54,4 +54,75 @@ A web page is constructed with specific elements and attributes.
 
 ## Cascading Style Sheets (CSS)
 
+CSS gives us a way to style our page. Some of things involved with styling includes colors, fonts and sizes of things. To create the styles we define _rules_ for specific sets of elements. A rule is made up of a _selector_ and a block of _declarations_.
 
+### Adding to a web page
+
+There are a number of ways to add styling to a web page, but we'll focus on the easiest way for now. Just create a `<style>` element inside the `<head>` element of your page and put your rules inside them.
+
+```xml
+<html>
+  <head>
+    <title>CSS FTW!</title>
+    <style>
+      [CSS rules go in here]
+    </style>
+  </head>
+  <body>
+    CSS is FUN!
+  </body>
+</html>
+```
+
+
+### Selectors
+
+There are a lot of ways to select a set of elements but we'll just focus on a few ways. One way is to make a selection using the element name.
+
+```css
+h1 { color: purple; }
+```
+
+In the above example, `h1` is the selector that selects all `h1` elements on the page.
+
+A really popular way to select elements is to assign them a _class_ and then target the classes in your selection. The first step is to assign a class to an element.
+
+```xml
+<div class="blue thin">I'm thin and blue</div>
+```
+
+Notice how you can add as many as you like just by separating them with a space.
+
+The next step is to select the classes in your CSS file. You do this by prefixing a full stop before the class name.
+
+```css
+.blue { color: blue; }
+.thin { border-width: 1px; }
+```
+
+
+## Declarations
+
+Declarations are made up of the style you want to change and the style's new value. Here are a few examples:
+
+```css
+.blue-all-the-things {
+  color: blue;
+  background-color: blue;
+  border-color: blue; 
+}
+
+.not-fancy {
+  font: 16px "Open Sans", sans-serif;
+}
+
+.icon {
+  background-image: url(icon.png);
+}
+
+.bigger-border {
+  border-width: 5px;
+}
+```
+
+Now that you have the fundamentals, the next step is to have a play and explore all of the possibilities. Perhaps have a look at the [CSS Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) and find something new to try.

@@ -134,4 +134,12 @@ Because many elements might have class `wombat`, this could make quite a bit of 
 
 ### Event handlers
 
+Every time the user interacts with the page in their browser an _event_ is triggered. We can listen for these events and make changes to the DOM when they occur. We do this using the [`.on()`](http://api.jquery.com/on/) function:
 
+```js
+$('#wombat').on('click', function () {
+  $(this).css('color', 'red')  
+})
+```
+
+See that `$(this)`? It just means "the thing that I clicked on". So the example above would turn the `#wombat` element red when it was clicked.

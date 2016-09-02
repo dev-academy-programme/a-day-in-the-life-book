@@ -54,7 +54,7 @@ A web page is constructed with specific elements and attributes.
 
 ## Cascading Style Sheets (CSS)
 
-CSS gives us a way to style our page. Some of things involved with styling includes colors, fonts and sizes of things. To create the styles we define _rules_ for specific sets of elements. A rule is made up of a _selector_ and a block of _declarations_.
+CSS gives us a way to style our page. Some of things involved with styling includes colors, fonts and sizes of things. To create the styles we define _rules_ for specific sets of elements. A rule is made up of a _selector_ and a block of _declarations_. Before we talk about how to write selectors and declarations, let's see how to attach our CSS to our HTML page.
 
 ### Adding to a web page
 

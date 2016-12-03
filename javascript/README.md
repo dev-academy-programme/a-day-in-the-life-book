@@ -146,4 +146,4 @@ See that `$(this)`? It just means "the thing that I clicked on". So the example 
 
 ### JavaScript Racer
 
-As an opportunity to put all of this new-found knowledge to use, let's build a JavaScript Racer game. Begin by using Git to clone the [JavaScript Racer repository](https://github.com/dev-academy-challenges/javascript-racer) and following the instructions.
+As an opportunity to put all of this new-found knowledge to use, let's build a JavaScript Racer game. Begin by using Git to clone the [JavaScript Racer repository](https://github.com/dev-academy-challenges/javascript-racer) and following the instructions. A shortened URL: [https://goo.gl/hcoqnG](https://goo.gl/hcoqnG).

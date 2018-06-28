@@ -67,7 +67,7 @@ To add a script to a web page, we use the `<script>` element.
 
 The document object model is an in-memory representation of the HTML document that is created by the browser after it reads the HTML file. The DOM is a hierarchical structure of objects that represent each HTML element, also known as a _node_. When we want to programmatically alter the web page with JavaScript, we do so by manipulating the DOM. In addition to adding and removing elements from the document, we can also select existing elements/nodes, add and remove classes from elements, and be notified when the user performs actions such as clicking or hovering on elements.
 
-Before we can run any script that reads or modifies the DOM, we need to ensure the DOM is completely loaded and stabalised. To ensure this, we want our code to run after the `DOMContentLoaded` event. For example, we could do this:
+Before we can run any script that reads or modifies the DOM, we need to ensure the DOM is completely loaded and stabilised. To ensure this, we want our code to run after the `DOMContentLoaded` event. For example, we could do this:
 
 ```js
 document.addEventListener('DOMContentLoaded', function () {
@@ -135,7 +135,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 Once we've selected the elements we want to work with, one of the most powerful things we can do is modify the CSS classes on that element. We do this with the [`classList`](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) property of the element. The classes are defined in our CSS files and when we add and remove them on elements, the browser applies the style changes right away.
 
-For example, if we want add the `red` CSS class to the elements with the `item` class, we could do this:
+For example, if we want to add the `red` CSS class to the elements with the `item` class, we could do this:
 
 ```js
 document.addEventListener('DOMContentLoaded', function () {
